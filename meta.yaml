@@ -1,0 +1,70 @@
+package:
+  name: pybrain
+  version: "0.4.0"
+
+source:
+  path: ./
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - scipy
+
+  run:
+    - python
+    - scipy
+
+test:
+  # Python imports
+  imports:
+    - pybrain
+    - pybrain.auxiliary
+    - pybrain.datasets
+    - pybrain.optimization
+    - pybrain.optimization.distributionbased
+    - pybrain.optimization.finitedifference
+    - pybrain.optimization.memetic
+    - pybrain.optimization.populationbased
+    - pybrain.optimization.populationbased.coevolution
+    - pybrain.optimization.populationbased.multiobjective
+    - pybrain.structure
+    - pybrain.structure.connections
+    - pybrain.structure.evolvables
+    - pybrain.structure.modules
+    - pybrain.structure.networks
+    - pybrain.structure.networks.custom
+    - pybrain.supervised
+    - pybrain.supervised.evolino
+    - pybrain.supervised.knn
+    - pybrain.supervised.knn.lsh
+    - pybrain.supervised.trainers
+    - pybrain.tests
+    - pybrain.tests.unittests
+    - pybrain.tests.unittests.auxiliary
+    - pybrain.tests.unittests.datasets
+    - pybrain.tests.unittests.optimization
+    - pybrain.tests.unittests.optimization.populationbased
+    - pybrain.tests.unittests.rl
+    - pybrain.tests.unittests.rl.environments
+    - pybrain.tests.unittests.rl.environments.twoplayergames
+    - pybrain.tests.unittests.structure
+    - pybrain.tests.unittests.structure.connections
+    - pybrain.tests.unittests.structure.modules
+    - pybrain.tests.unittests.structure.networks
+    - pybrain.tests.unittests.structure.networks.custom
+    - pybrain.tests.unittests.supervised
+    - pybrain.tests.unittests.supervised.knn
+    - pybrain.tests.unittests.supervised.knn.lsh
+    - pybrain.tests.unittests.supervised.trainers
+    - pybrain.tests.unittests.tools
+    - pybrain.tests.unittests.unsupervised
+    - pybrain.tools
+    - pybrain.tools.customxml
+    - pybrain.tools.datasets
+    - pybrain.tools.mixtures
+    - pybrain.tools.networking
+    - pybrain.unsupervised
+    - pybrain.unsupervised.trainers
+
+
