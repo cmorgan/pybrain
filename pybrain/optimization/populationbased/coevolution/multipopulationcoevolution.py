@@ -2,7 +2,7 @@ __author__ = 'Tom Schaul, tom@idsia.ch'
 
 from random import choice
 
-from pybrain.optimization.coevolution.coevolution import Coevolution
+from pybrain.optimization.populationbased.coevolution import Coevolution
 
 
 class MultiPopulationCoevolution(Coevolution):
